@@ -45,7 +45,7 @@ function registroCandidato (e,event){
     
         set(ref(db,"Candidatos/"+candidato.ID),candidato);
         set(ref(db,"Votos/"+candidato.ID),voto);
-        verCantidatos();
+       // verCantidatos();
     }
 
 }
@@ -112,14 +112,27 @@ function registrarVotos (voto,id){
 
 }
 
-function verCantidatos (){
+/*function verCantidatos (){
+  /*  db.ref('Candidatos').on('value',function(data){
+        alert(data.val().ID+":"+data.val().Name);
+    }); */
 
-    let n = nombre.value;
-    let id= id_usuario.value;
+    bd.ref('Candidatos').on('value',function(data){
+        data.forEach(
+            function(info){
+                let clave = info.key;
+                let valor = user.val();
 
-    alert(n+":"+id);
-    //set(ref(db,"Candidatos/"+candidato.ID),candidato);
-}
+                //alert(clave+":"+valor.Name);
+
+                console.log(clave);
+                console.log(valor.Name);
+            }
+    );
+    });
+  
+} 
+
 
 registrarBtn.addEventListener("click",registroCandidato);
 votarBtn.addEventListener("click",votar);
