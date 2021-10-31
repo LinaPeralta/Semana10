@@ -1,0 +1,40 @@
+#titulo{
+    color: brown;
+}
+
+.label{
+    color: darkslategrey;
+}
+
+body
+{
+    
+    font-family: Helvetica;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    font-size: 15px;
+  
+}
+
+#nombre{
+    margin:10px;
+}
+
+#votarBtn{
+    margin:10px;
+}
+
+#candidatosBtn{
+    color: white;
+    background-color: lightslategray;
+    margin:10px;
+}
+
+#votacionesBtn{
+    color: white;
+    background-color: lightslategray;
+}
+
+

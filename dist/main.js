@@ -1,0 +1,1 @@
+(()=>{const e=document.getElementById("nombre"),t=document.getElementById("id_usuario"),n=(document.getElementById("id_candidato"),document.getElementById("registrarBtn"));document.getElementById("votarBtn"),document.getElementById("candidatosBtn"),document.getElementById("votacionesBtn"),n.addEventListener("click",(function(n,d){const o=e.value,c=t.value;alert(o+" : "+c)}))})();
