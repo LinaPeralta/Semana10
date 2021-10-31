@@ -115,7 +115,7 @@ function registrarVotos (voto,id){
 /*function verCantidatos (){
   /*  db.ref('Candidatos').on('value',function(data){
         alert(data.val().ID+":"+data.val().Name);
-    }); */
+    }); 
 
     bd.ref('Candidatos').on('value',function(data){
         data.forEach(
@@ -131,7 +131,7 @@ function registrarVotos (voto,id){
     );
     });
   
-} 
+} */
 
 
 registrarBtn.addEventListener("click",registroCandidato);
